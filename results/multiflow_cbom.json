@@ -1,0 +1,553 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:64858a24-0f5a-4f5c-bc37-783e6eae684c",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-15T12:13:25.294043+00:00",
+    "tools": [
+      {
+        "name": "PQ-Scout",
+        "version": "0.5.0"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17002",
+      "name": "TLS_AES_128_GCM_SHA256",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.3",
+          "cipherSuites": [
+            {
+              "name": "TLS_AES_128_GCM_SHA256"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17002"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "ECDHE"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "secp384r1"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "ECDHE, secp384r1, TLS_AES_128_GCM_SHA256"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "58.5"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "ECDHE key exchange is quantum-vulnerable (factor 0.90); negotiated group secp384r1 is classical; port 17002 data-longevity factor 0.65"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17001",
+      "name": "TLS_AES_256_GCM_SHA384",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.3",
+          "cipherSuites": [
+            {
+              "name": "TLS_AES_256_GCM_SHA384"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17001"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "ECDHE"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "x25519"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "ECDHE, x25519, TLS_AES_256_GCM_SHA384"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "58.5"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "ECDHE key exchange is quantum-vulnerable (factor 0.90); negotiated group x25519 is classical; port 17001 data-longevity factor 0.65"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17008",
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.1",
+          "cipherSuites": [
+            {
+              "name": "TLS_RSA_WITH_AES_128_CBC_SHA"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17008"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "RSA, RSA, TLS_RSA_WITH_AES_128_CBC_SHA"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "65.0"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "RSA key exchange is quantum-vulnerable (factor 1.00); port 17008 data-longevity factor 0.65; no forward secrecy: past sessions decryptable from the private key"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17004",
+      "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.2",
+          "cipherSuites": [
+            {
+              "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17004"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "DHE"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "DHE, RSA, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "61.7"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "DHE key exchange is quantum-vulnerable (factor 0.95); port 17004 data-longevity factor 0.65"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17003",
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.2",
+          "cipherSuites": [
+            {
+              "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17003"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "ECDHE"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "ECDHE, RSA, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "58.5"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "ECDHE key exchange is quantum-vulnerable (factor 0.90); port 17003 data-longevity factor 0.65"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17005",
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.2",
+          "cipherSuites": [
+            {
+              "name": "TLS_RSA_WITH_AES_128_CBC_SHA"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17005"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "RSA, RSA, TLS_RSA_WITH_AES_128_CBC_SHA"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "65.0"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "RSA key exchange is quantum-vulnerable (factor 1.00); port 17005 data-longevity factor 0.65; no forward secrecy: past sessions decryptable from the private key"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17006",
+      "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.2",
+          "cipherSuites": [
+            {
+              "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17006"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "ECDHE"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "ECDHE, RSA, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "58.5"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "ECDHE key exchange is quantum-vulnerable (factor 0.90); port 17006 data-longevity factor 0.65"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto/127.0.0.1:17007",
+      "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "cryptoProperties": {
+        "assetType": "protocol",
+        "protocolProperties": {
+          "type": "tls",
+          "version": "TLS 1.0",
+          "cipherSuites": [
+            {
+              "name": "TLS_RSA_WITH_AES_256_CBC_SHA"
+            }
+          ]
+        }
+      },
+      "properties": [
+        {
+          "name": "pqscout:asset",
+          "value": "127.0.0.1:17007"
+        },
+        {
+          "name": "pqscout:serverName",
+          "value": "pqscout-lab.local"
+        },
+        {
+          "name": "pqscout:keyExchange",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:namedGroup",
+          "value": "None"
+        },
+        {
+          "name": "pqscout:signature",
+          "value": "RSA"
+        },
+        {
+          "name": "pqscout:algorithms",
+          "value": "RSA, RSA, TLS_RSA_WITH_AES_256_CBC_SHA"
+        },
+        {
+          "name": "pqscout:hndlScore",
+          "value": "65.0"
+        },
+        {
+          "name": "pqscout:hndlBand",
+          "value": "HIGH"
+        },
+        {
+          "name": "pqscout:rationale",
+          "value": "RSA key exchange is quantum-vulnerable (factor 1.00); port 17007 data-longevity factor 0.65; no forward secrecy: past sessions decryptable from the private key"
+        },
+        {
+          "name": "pqscout:captureIncomplete",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:helloRetryRequest",
+          "value": "false"
+        },
+        {
+          "name": "pqscout:connections",
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}

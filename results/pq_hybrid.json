@@ -1,0 +1,60 @@
+{
+  "generator": "Go go1.24.7 crypto/tls",
+  "rows": [
+    {
+      "case": "pq_hybrid_x25519mlkem768",
+      "server_accepts": "mlkem",
+      "client_offers": "mlkem,x25519",
+      "go_reported": "negotiated version=TLS 1.3 cipher=TLS_AES_128_GCM_SHA256",
+      "expected_group": "X25519MLKEM768",
+      "observed_group": "X25519MLKEM768",
+      "expected_band": "LOW",
+      "observed_band": "LOW",
+      "score": 0.0,
+      "rationale": "Key exchange uses X25519MLKEM768, a post-quantum/hybrid group. Not exposed to harvest-now-decrypt-later.",
+      "offered_groups": [
+        "X25519MLKEM768",
+        "x25519"
+      ],
+      "hello_retry": false,
+      "correct": true
+    },
+    {
+      "case": "classical_x25519",
+      "server_accepts": "x25519",
+      "client_offers": "mlkem,x25519",
+      "go_reported": "negotiated version=TLS 1.3 cipher=TLS_AES_128_GCM_SHA256",
+      "expected_group": "x25519",
+      "observed_group": "x25519",
+      "expected_band": "HIGH",
+      "observed_band": "HIGH",
+      "score": 58.5,
+      "rationale": "ECDHE key exchange is quantum-vulnerable (factor 0.90); negotiated group x25519 is classical; port 19444 data-longevity factor 0.65",
+      "offered_groups": [
+        "X25519MLKEM768",
+        "x25519"
+      ],
+      "hello_retry": false,
+      "correct": true
+    },
+    {
+      "case": "classical_p256_via_hrr",
+      "server_accepts": "p256",
+      "client_offers": "mlkem,x25519,p256",
+      "go_reported": "negotiated version=TLS 1.3 cipher=TLS_AES_128_GCM_SHA256",
+      "expected_group": "secp256r1",
+      "observed_group": "secp256r1",
+      "expected_band": "HIGH",
+      "observed_band": "HIGH",
+      "score": 58.5,
+      "rationale": "ECDHE key exchange is quantum-vulnerable (factor 0.90); negotiated group secp256r1 is classical; port 19445 data-longevity factor 0.65",
+      "offered_groups": [
+        "X25519MLKEM768",
+        "x25519",
+        "secp256r1"
+      ],
+      "hello_retry": true,
+      "correct": true
+    }
+  ]
+}

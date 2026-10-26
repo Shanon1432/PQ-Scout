@@ -1,0 +1,576 @@
+[
+  {
+    "name": "tls13_aes_128_gcm_sha256_x25519",
+    "port": 15000,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "kex": "ECDHE",
+      "group": "x25519"
+    },
+    "pcap": "data/batch/tls13_aes_128_gcm_sha256_x25519.pcap",
+    "packets": 30,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_128_gcm_sha256_p-256",
+    "port": 15001,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "kex": "ECDHE",
+      "group": "secp256r1"
+    },
+    "pcap": "data/batch/tls13_aes_128_gcm_sha256_p-256.pcap",
+    "packets": 30,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_128_gcm_sha256_p-384",
+    "port": 15002,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "kex": "ECDHE",
+      "group": "secp384r1"
+    },
+    "pcap": "data/batch/tls13_aes_128_gcm_sha256_p-384.pcap",
+    "packets": 30,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_128_gcm_sha256_p-521",
+    "port": 15003,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_128_GCM_SHA256",
+      "kex": "ECDHE",
+      "group": "secp521r1"
+    },
+    "pcap": "data/batch/tls13_aes_128_gcm_sha256_p-521.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_256_gcm_sha384_x25519",
+    "port": 15004,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "kex": "ECDHE",
+      "group": "x25519"
+    },
+    "pcap": "data/batch/tls13_aes_256_gcm_sha384_x25519.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_256_gcm_sha384_p-256",
+    "port": 15005,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "kex": "ECDHE",
+      "group": "secp256r1"
+    },
+    "pcap": "data/batch/tls13_aes_256_gcm_sha384_p-256.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_256_gcm_sha384_p-384",
+    "port": 15006,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "kex": "ECDHE",
+      "group": "secp384r1"
+    },
+    "pcap": "data/batch/tls13_aes_256_gcm_sha384_p-384.pcap",
+    "packets": 30,
+    "ok": true
+  },
+  {
+    "name": "tls13_aes_256_gcm_sha384_p-521",
+    "port": 15007,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "kex": "ECDHE",
+      "group": "secp521r1"
+    },
+    "pcap": "data/batch/tls13_aes_256_gcm_sha384_p-521.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_chacha20_poly1305_sha256_x25519",
+    "port": 15008,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+      "kex": "ECDHE",
+      "group": "x25519"
+    },
+    "pcap": "data/batch/tls13_chacha20_poly1305_sha256_x25519.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_chacha20_poly1305_sha256_p-256",
+    "port": 15009,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+      "kex": "ECDHE",
+      "group": "secp256r1"
+    },
+    "pcap": "data/batch/tls13_chacha20_poly1305_sha256_p-256.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls13_chacha20_poly1305_sha256_p-384",
+    "port": 15010,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+      "kex": "ECDHE",
+      "group": "secp384r1"
+    },
+    "pcap": "data/batch/tls13_chacha20_poly1305_sha256_p-384.pcap",
+    "packets": 30,
+    "ok": true
+  },
+  {
+    "name": "tls13_chacha20_poly1305_sha256_p-521",
+    "port": 15011,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.3",
+      "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+      "kex": "ECDHE",
+      "group": "secp521r1"
+    },
+    "pcap": "data/batch/tls13_chacha20_poly1305_sha256_p-521.pcap",
+    "packets": 32,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes256_gcm_sha384",
+    "port": 15012,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes256_gcm_sha384.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes128_gcm_sha256",
+    "port": 15013,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes128_gcm_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes256_sha384",
+    "port": 15014,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes256_sha384.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes128_sha256",
+    "port": 15015,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes128_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes256_sha",
+    "port": 15016,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes256_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_aes128_sha",
+    "port": 15017,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_aes128_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_ecdhe_rsa_chacha20_poly1305",
+    "port": 15018,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "kex": "ECDHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_ecdhe_rsa_chacha20_poly1305.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_dhe_rsa_aes256_gcm_sha384",
+    "port": 15019,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+      "kex": "DHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_dhe_rsa_aes256_gcm_sha384.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_dhe_rsa_aes128_gcm_sha256",
+    "port": 15020,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+      "kex": "DHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_dhe_rsa_aes128_gcm_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_dhe_rsa_aes256_sha256",
+    "port": 15021,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+      "kex": "DHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_dhe_rsa_aes256_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_dhe_rsa_aes128_sha",
+    "port": 15022,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+      "kex": "DHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_dhe_rsa_aes128_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_dhe_rsa_chacha20_poly1305",
+    "port": 15023,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "kex": "DHE",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_dhe_rsa_chacha20_poly1305.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes256_gcm_sha384",
+    "port": 15024,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes256_gcm_sha384.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes128_gcm_sha256",
+    "port": 15025,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes128_gcm_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes256_sha256",
+    "port": 15026,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes256_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes128_sha256",
+    "port": 15027,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes128_sha256.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes256_sha",
+    "port": 15028,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes256_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls12_aes128_sha",
+    "port": 15029,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.2",
+      "cipher": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls12_aes128_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls1_0_aes128_sha",
+    "port": 15030,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.0",
+      "cipher": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_0_aes128_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls1_0_aes256_sha",
+    "port": 15031,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.0",
+      "cipher": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_0_aes256_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls1_0_des_cbc3_sha",
+    "port": 15032,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.0",
+      "cipher": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_0_des_cbc3_sha.pcap",
+    "packets": 0,
+    "ok": true
+  },
+  {
+    "name": "tls1_1_aes128_sha",
+    "port": 15033,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.1",
+      "cipher": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_1_aes128_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls1_1_aes256_sha",
+    "port": 15034,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.1",
+      "cipher": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_1_aes256_sha.pcap",
+    "packets": 28,
+    "ok": true
+  },
+  {
+    "name": "tls1_1_des_cbc3_sha",
+    "port": 15035,
+    "kind": "tls",
+    "truth": {
+      "version": "TLS 1.1",
+      "cipher": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+      "kex": "RSA",
+      "group": null
+    },
+    "pcap": "data/batch/tls1_1_des_cbc3_sha.pcap",
+    "packets": 0,
+    "ok": true
+  },
+  {
+    "name": "neg_plain_http",
+    "port": 15036,
+    "kind": "plain_http",
+    "truth": {
+      "version": null,
+      "cipher": null,
+      "kex": null,
+      "group": null
+    },
+    "pcap": "data/batch/neg_plain_http.pcap",
+    "packets": 22,
+    "ok": true
+  },
+  {
+    "name": "neg_random_bytes",
+    "port": 15037,
+    "kind": "random_bytes",
+    "truth": {
+      "version": null,
+      "cipher": null,
+      "kex": null,
+      "group": null
+    },
+    "pcap": "data/batch/neg_random_bytes.pcap",
+    "packets": 20,
+    "ok": true
+  },
+  {
+    "name": "neg_truncated_hello",
+    "port": 15038,
+    "kind": "truncated_hello",
+    "truth": {
+      "version": null,
+      "cipher": null,
+      "kex": null,
+      "group": null
+    },
+    "pcap": "data/batch/neg_truncated_hello.pcap",
+    "packets": 20,
+    "ok": true
+  },
+  {
+    "name": "neg_http_post",
+    "port": 15039,
+    "kind": "http_post",
+    "truth": {
+      "version": null,
+      "cipher": null,
+      "kex": null,
+      "group": null
+    },
+    "pcap": "data/batch/neg_http_post.pcap",
+    "packets": 22,
+    "ok": true
+  },
+  {
+    "name": "neg_binary_stream",
+    "port": 15040,
+    "kind": "binary_stream",
+    "truth": {
+      "version": null,
+      "cipher": null,
+      "kex": null,
+      "group": null
+    },
+    "pcap": "data/batch/neg_binary_stream.pcap",
+    "packets": 20,
+    "ok": true
+  }
+]

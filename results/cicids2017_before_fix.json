@@ -1,0 +1,310 @@
+{
+  "dataset": "CIC-IDS2017 (Sharafaldin, Lashkari & Ghorbani, 2018)",
+  "prefilter": {
+    "input": "Friday-WorkingHours.pcap",
+    "input_bytes": 8839309056,
+    "input_format": "pcapng",
+    "linktype": 1,
+    "packets_read": 9997874,
+    "ipv4_tcp_packets": 9191727,
+    "tcp_connections_with_payload": 125259,
+    "tls_connections_kept": 52544,
+    "packets_kept": 581728,
+    "keep_per_direction": 8,
+    "output_files": [
+      "tls_part000.pcap",
+      "tls_part001.pcap",
+      "tls_part002.pcap",
+      "tls_part003.pcap",
+      "tls_part004.pcap",
+      "tls_part005.pcap",
+      "tls_part006.pcap",
+      "tls_part007.pcap",
+      "tls_part008.pcap",
+      "tls_part009.pcap",
+      "tls_part010.pcap",
+      "tls_part011.pcap",
+      "tls_part012.pcap",
+      "tls_part013.pcap",
+      "tls_part014.pcap",
+      "tls_part015.pcap",
+      "tls_part016.pcap",
+      "tls_part017.pcap",
+      "tls_part018.pcap",
+      "tls_part019.pcap",
+      "tls_part020.pcap",
+      "tls_part021.pcap",
+      "tls_part022.pcap",
+      "tls_part023.pcap",
+      "tls_part024.pcap",
+      "tls_part025.pcap",
+      "tls_part026.pcap"
+    ],
+    "seconds": 63.3
+  },
+  "pqscout_seconds": 160.3,
+  "tls_handshakes_observed": 52536,
+  "with_server_hello": 52223,
+  "incomplete_captures": 8348,
+  "unique_server_assets": 6804,
+  "tls_versions": {
+    "TLS 1.2": 40564,
+    "None": 8345,
+    "TLS 1.0": 3307,
+    "TLS 1.1": 7
+  },
+  "key_exchange": {
+    "ECDHE": 44017,
+    "RSA": 6378,
+    "DHE": 1674,
+    "None": 154
+  },
+  "selected_cipher_top10": {
+    "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256": 29372,
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384": 8075,
+    "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256": 4125,
+    "TLS_RSA_WITH_AES_128_CBC_SHA": 4078,
+    "TLS_RSA_WITH_AES_256_CBC_SHA": 1905,
+    "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": 964,
+    "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256": 816,
+    "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384": 643,
+    "TLS_DHE_RSA_WITH_AES_256_CBC_SHA": 502,
+    "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": 422
+  },
+  "suites_not_in_pqscout_table": {
+    "0x0005": 98,
+    "0x0004": 36,
+    "0xc011": 13,
+    "0x0016": 5,
+    "0xc009": 2
+  },
+  "post_quantum_groups_seen": 0,
+  "hndl_band_per_connection": {
+    "HIGH": 51709,
+    "MEDIUM": 464,
+    "CRITICAL": 360,
+    "REVIEW": 3
+  },
+  "hndl_band_per_asset": {
+    "HIGH": 6743,
+    "CRITICAL": 30,
+    "MEDIUM": 30,
+    "REVIEW": 1
+  },
+  "wireshark_cross_check": {
+    "tshark_connections_with_client_and_server_hello": 52164,
+    "pqscout_found_same_connection": 52158,
+    "missed_by_pqscout": 6,
+    "pqscout_only": 60,
+    "agreement": {
+      "version": {
+        "agree": 43616,
+        "compared": 52158,
+        "rate": 0.8362
+      },
+      "cipher": {
+        "agree": 52156,
+        "compared": 52158,
+        "rate": 1.0
+      },
+      "group_tls13": {
+        "agree": 0,
+        "compared": 0,
+        "rate": null
+      }
+    },
+    "disagreement_count_by_field": {
+      "version": 8542,
+      "cipher": 2
+    },
+    "disagreement_kind": {
+      "version:blank": 8320,
+      "version:different": 222,
+      "cipher:different": 2
+    },
+    "disagreement_examples": [
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 12119
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 12162
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 12213
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 15058
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 15751
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18749
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18754
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18758
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18761
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18765
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18768
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 18946
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 19333
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 30718
+      },
+      {
+        "field": "version",
+        "pqscout": "0x0303",
+        "wireshark": "0x0301",
+        "frame": 30803
+      },
+      {
+        "field": "version",
+        "pqscout": "0x0303",
+        "wireshark": "0x0301",
+        "frame": 30807
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 30811
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 35819
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38158
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38161
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38414
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38538
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38602
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38605
+      },
+      {
+        "field": "version",
+        "pqscout": null,
+        "wireshark": "0x0303",
+        "frame": 38610
+      }
+    ],
+    "missed_examples": [
+      {
+        "client_hello_frame": 2954975,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      },
+      {
+        "client_hello_frame": 2954977,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      },
+      {
+        "client_hello_frame": 2954979,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      },
+      {
+        "client_hello_frame": 2954981,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      },
+      {
+        "client_hello_frame": 5482763,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      },
+      {
+        "client_hello_frame": 6101956,
+        "pqscout_saw_connection": false,
+        "pqscout_incomplete": null
+      }
+    ]
+  }
+}

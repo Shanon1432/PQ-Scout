@@ -1,0 +1,30 @@
+Against stored IANA snapshot:
+  OK   0x0017 IANA=secp256r1                  pqscout=secp256r1
+  OK   0x0018 IANA=secp384r1                  pqscout=secp384r1
+  OK   0x0019 IANA=secp521r1                  pqscout=secp521r1
+  OK   0x001d IANA=x25519                     pqscout=x25519
+  OK   0x0200 IANA=MLKEM512                   pqscout=MLKEM512
+  OK   0x0201 IANA=MLKEM768                   pqscout=MLKEM768
+  OK   0x0202 IANA=MLKEM1024                  pqscout=MLKEM1024
+  OK   0x11eb IANA=SecP256r1MLKEM768          pqscout=SecP256r1MLKEM768
+  OK   0x11ec IANA=X25519MLKEM768             pqscout=X25519MLKEM768
+  OK   0x11ed IANA=SecP384r1MLKEM1024         pqscout=SecP384r1MLKEM1024
+  OK   0x6399 IANA=X25519Kyber768Draft00      pqscout=X25519Kyber768Draft00
+  OK   0x639a IANA=SecP256r1Kyber768Draft00   pqscout=SecP256r1Kyber768Draft00
+  snapshot: PASS
+
+Against live IANA registry:
+  OK   0x0017 IANA=secp256r1                  pqscout=secp256r1
+  OK   0x0018 IANA=secp384r1                  pqscout=secp384r1
+  OK   0x0019 IANA=secp521r1                  pqscout=secp521r1
+  OK   0x001d IANA=x25519                     pqscout=x25519
+  OK   0x0200 IANA=MLKEM512                   pqscout=MLKEM512
+  OK   0x0201 IANA=MLKEM768                   pqscout=MLKEM768
+  OK   0x0202 IANA=MLKEM1024                  pqscout=MLKEM1024
+  OK   0x11eb IANA=SecP256r1MLKEM768          pqscout=SecP256r1MLKEM768
+  OK   0x11ec IANA=X25519MLKEM768             pqscout=X25519MLKEM768
+  OK   0x11ed IANA=SecP384r1MLKEM1024         pqscout=SecP384r1MLKEM1024
+  OK   0x6399 IANA=X25519Kyber768Draft00      pqscout=X25519Kyber768Draft00
+  OK   0x639a IANA=SecP256r1Kyber768Draft00   pqscout=SecP256r1Kyber768Draft00
+  live: PASS
+

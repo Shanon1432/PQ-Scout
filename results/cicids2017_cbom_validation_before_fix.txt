@@ -1,0 +1,20 @@
+CycloneDX 1.6 validation of the CIC-IDS2017 CBOM produced BEFORE the cbom.py fix (15 Oct 2026)
+Result: INVALID
+
+None is not of type 'string'
+
+Failed validating 'type' in schema['properties']['components']['items']['properties']['cryptoProperties']['properties']['protocolProperties']['properties']['cipherSuites']['items']['properties']['name']:
+    {'type': 'string',
+     'title': 'Common Name',
+     'description': 'A common name for the cipher suite.',
+     'examples': ['TLS_DHE_RSA_WITH_AES_128_CCM']}
+
+On instance['components'][440]['cryptoProperties']['protocolProperties']['cipherSuites'][0]['name']:
+    None
+
+After fixing the null fields only (cbom.py _protocol_properties), validation still failed:
+  Failed validating 'uniqueItems' in schema['properties']['components']
+because one component was written per connection and many connections went to the
+same server, giving identical components with duplicate bom-refs. build_cbom() now
+writes one component per distinct configuration of each server asset, with a
+pqscout:connections count. See results/cicids2017_cbom.json for the fixed output.

@@ -1,0 +1,34 @@
+1. Constructed-ground-truth batch
+   TLS cases fully correct: 34/34   negative controls ignored: 5/5
+
+2. Multi-flow concurrency
+   connections correctly separated and attributed: 8/8
+
+3. Adversarial / degraded traffic   (expected after the fix: loss and late capture -> SAFE_MISS)
+   base_tls13_x25519    baseline=CORRECT  fragmented=CORRECT  reordered=CORRECT  duplicated=CORRECT  lossy=SAFE_MISS  midsession=SAFE_MISS
+   base_tls12_ecdhe     baseline=CORRECT  fragmented=CORRECT  reordered=CORRECT  duplicated=CORRECT  lossy=SAFE_MISS  midsession=SAFE_MISS
+   base_tls12_rsa       baseline=CORRECT  fragmented=CORRECT  reordered=CORRECT  duplicated=CORRECT  lossy=SAFE_MISS  midsession=SAFE_MISS
+   confident-wrong or crash: 0   unexpected outcomes: 0
+
+4. Nmap baseline
+   tls12_ecdhe_rsa  PQ-Scout saw TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  -> in Nmap's set of 20: True
+   tls12_rsa        PQ-Scout saw TLS_RSA_WITH_AES_128_CBC_SHA  -> in Nmap's set of 20: True
+   tls13_x25519     PQ-Scout saw TLS_AES_256_GCM_SHA384  -> in Nmap's set of 3: True
+
+5. Post-quantum hybrid (Go-generated handshakes)
+   pq_hybrid_x25519mlkem768   group=X25519MLKEM768  score=0.0 band=LOW  PASS
+   classical_x25519           group=x25519          score=58.5 band=HIGH  PASS
+   classical_p256_via_hrr     group=secp256r1       score=58.5 band=HIGH  PASS
+
+6. Registry conformance
+   post-quantum codepoints matching IANA snapshot: 12/12
+
+============================================================
+  PASS   1 Batch (41 cases)
+  PASS   2 Multi-flow
+  PASS   3 Stress
+  PASS   4 Nmap baseline
+  PASS   5 PQ hybrid
+  PASS   6 IANA registry
+============================================================
+  6/6 experiments reproduce from saved captures

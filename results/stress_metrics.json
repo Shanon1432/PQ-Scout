@@ -1,0 +1,177 @@
+{
+  "generated_cases": 3,
+  "conditions": [
+    "baseline",
+    "fragmented",
+    "reordered",
+    "duplicated",
+    "lossy",
+    "midsession"
+  ],
+  "rows": [
+    {
+      "case": "base_tls13_x25519",
+      "condition": "baseline",
+      "packets": 32,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls13_x25519",
+      "condition": "fragmented",
+      "packets": 578,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls13_x25519",
+      "condition": "reordered",
+      "packets": 32,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls13_x25519",
+      "condition": "duplicated",
+      "packets": 33,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls13_x25519",
+      "condition": "lossy",
+      "packets": 1132,
+      "outcome": "SAFE_MISS",
+      "detail": "negotiated_version: expected 'TLS 1.3', got None; key_exchange: expected 'ECDHE', got None; named_group: expected 'x25519', got None"
+    },
+    {
+      "case": "base_tls13_x25519",
+      "condition": "midsession",
+      "packets": 20,
+      "outcome": "SAFE_MISS",
+      "detail": "no handshake observed"
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "baseline",
+      "packets": 28,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "fragmented",
+      "packets": 460,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "reordered",
+      "packets": 28,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "duplicated",
+      "packets": 32,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "lossy",
+      "packets": 896,
+      "outcome": "SAFE_MISS",
+      "detail": "negotiated_version: expected 'TLS 1.2', got None; key_exchange: expected 'ECDHE', got None; selected_cipher: expected 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384', got None"
+    },
+    {
+      "case": "base_tls12_ecdhe",
+      "condition": "midsession",
+      "packets": 16,
+      "outcome": "SAFE_MISS",
+      "detail": "no handshake observed"
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "baseline",
+      "packets": 28,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "fragmented",
+      "packets": 462,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "reordered",
+      "packets": 28,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "duplicated",
+      "packets": 30,
+      "outcome": "CORRECT",
+      "detail": ""
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "lossy",
+      "packets": 898,
+      "outcome": "SAFE_MISS",
+      "detail": "negotiated_version: expected 'TLS 1.2', got None; key_exchange: expected 'RSA', got None; selected_cipher: expected 'TLS_RSA_WITH_AES_128_CBC_SHA', got None"
+    },
+    {
+      "case": "base_tls12_rsa",
+      "condition": "midsession",
+      "packets": 16,
+      "outcome": "SAFE_MISS",
+      "detail": "no handshake observed"
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "CORRECT": 3,
+      "SAFE_MISS": 0,
+      "WRONG": 0,
+      "CRASH": 0
+    },
+    "fragmented": {
+      "CORRECT": 3,
+      "SAFE_MISS": 0,
+      "WRONG": 0,
+      "CRASH": 0
+    },
+    "reordered": {
+      "CORRECT": 3,
+      "SAFE_MISS": 0,
+      "WRONG": 0,
+      "CRASH": 0
+    },
+    "duplicated": {
+      "CORRECT": 3,
+      "SAFE_MISS": 0,
+      "WRONG": 0,
+      "CRASH": 0
+    },
+    "lossy": {
+      "CORRECT": 0,
+      "SAFE_MISS": 3,
+      "WRONG": 0,
+      "CRASH": 0
+    },
+    "midsession": {
+      "CORRECT": 0,
+      "SAFE_MISS": 3,
+      "WRONG": 0,
+      "CRASH": 0
+    }
+  }
+}

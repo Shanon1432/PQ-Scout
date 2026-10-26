@@ -1,0 +1,81 @@
+{
+  "methodology": "Nmap ssl-enum-ciphers actively probes the server with one TLS handshake per cipher suite tested, to enumerate everything it supports. PQ-Scout makes zero connections and only reports what one real passively-observed session negotiated. The check here is whether PQ-Scout's single passive observation is a true member of Nmap's actively-confirmed set, and how much server-visible activity (connection count) each approach required.",
+  "rows": [
+    {
+      "case": "tls12_ecdhe_rsa",
+      "port": 48443,
+      "nmap_connections_made": "~20+ (one handshake per cipher tested)",
+      "nmap_ciphers_found": [
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "pqscout_connections_made": 0,
+      "pqscout_observed_cipher": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "pqscout_negotiated_version": "TLS 1.2",
+      "consistent_with_nmap": true
+    },
+    {
+      "case": "tls12_rsa",
+      "port": 48444,
+      "nmap_connections_made": "~20+ (one handshake per cipher tested)",
+      "nmap_ciphers_found": [
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+        "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+        "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+        "TLS_RSA_WITH_AES_128_CBC_SHA",
+        "TLS_RSA_WITH_AES_128_CBC_SHA256",
+        "TLS_RSA_WITH_AES_128_GCM_SHA256",
+        "TLS_RSA_WITH_AES_256_CBC_SHA",
+        "TLS_RSA_WITH_AES_256_CBC_SHA256",
+        "TLS_RSA_WITH_AES_256_GCM_SHA384"
+      ],
+      "pqscout_connections_made": 0,
+      "pqscout_observed_cipher": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "pqscout_negotiated_version": "TLS 1.2",
+      "consistent_with_nmap": true
+    },
+    {
+      "case": "tls13_x25519",
+      "port": 48445,
+      "nmap_connections_made": "~3+ (one handshake per cipher tested)",
+      "nmap_ciphers_found": [
+        "TLS_AES_128_GCM_SHA256",
+        "TLS_AES_256_GCM_SHA384",
+        "TLS_CHACHA20_POLY1305_SHA256"
+      ],
+      "pqscout_connections_made": 0,
+      "pqscout_observed_cipher": "TLS_AES_256_GCM_SHA384",
+      "pqscout_negotiated_version": "TLS 1.3",
+      "consistent_with_nmap": true
+    }
+  ]
+}

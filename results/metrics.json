@@ -1,0 +1,55 @@
+{
+  "cases_executed": 41,
+  "cases_evaluated": 39,
+  "excluded": [
+    [
+      "tls1_0_des_cbc3_sha",
+      "configuration not negotiable in test environment"
+    ],
+    [
+      "tls1_1_des_cbc3_sha",
+      "configuration not negotiable in test environment"
+    ]
+  ],
+  "detection": {
+    "tp": 34,
+    "fp": 0,
+    "fn": 0,
+    "tn": 5,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "field_accuracy": {
+    "version": {
+      "correct": 34,
+      "total": 34,
+      "accuracy": 1.0,
+      "errors": []
+    },
+    "cipher": {
+      "correct": 34,
+      "total": 34,
+      "accuracy": 1.0,
+      "errors": []
+    },
+    "kex": {
+      "correct": 34,
+      "total": 34,
+      "accuracy": 1.0,
+      "errors": []
+    },
+    "group": {
+      "correct": 34,
+      "total": 34,
+      "accuracy": 1.0,
+      "errors": []
+    }
+  },
+  "cipher_macro": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "classes": 21
+  }
+}

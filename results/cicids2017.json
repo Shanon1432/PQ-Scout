@@ -1,0 +1,149 @@
+{
+  "dataset": "CIC-IDS2017 (Sharafaldin, Lashkari & Ghorbani, 2018)",
+  "prefilter": {
+    "input": "Friday-WorkingHours.pcap",
+    "input_bytes": 8839309056,
+    "input_format": "pcapng",
+    "linktype": 1,
+    "packets_read": 9997874,
+    "ipv4_tcp_packets": 9191727,
+    "tcp_connections_with_payload": 125259,
+    "tls_connections_kept": 52544,
+    "packets_kept": 581728,
+    "keep_per_direction": 8,
+    "output_files": [
+      "tls_part000.pcap",
+      "tls_part001.pcap",
+      "tls_part002.pcap",
+      "tls_part003.pcap",
+      "tls_part004.pcap",
+      "tls_part005.pcap",
+      "tls_part006.pcap",
+      "tls_part007.pcap",
+      "tls_part008.pcap",
+      "tls_part009.pcap",
+      "tls_part010.pcap",
+      "tls_part011.pcap",
+      "tls_part012.pcap",
+      "tls_part013.pcap",
+      "tls_part014.pcap",
+      "tls_part015.pcap",
+      "tls_part016.pcap",
+      "tls_part017.pcap",
+      "tls_part018.pcap",
+      "tls_part019.pcap",
+      "tls_part020.pcap",
+      "tls_part021.pcap",
+      "tls_part022.pcap",
+      "tls_part023.pcap",
+      "tls_part024.pcap",
+      "tls_part025.pcap",
+      "tls_part026.pcap"
+    ],
+    "seconds": 63.3
+  },
+  "pqscout_seconds": 160.6,
+  "tls_handshakes_observed": 52536,
+  "with_server_hello": 52223,
+  "incomplete_captures": 186,
+  "unique_server_assets": 6803,
+  "tls_versions": {
+    "TLS 1.2": 48584,
+    "TLS 1.0": 3609,
+    "TLS 1.1": 30
+  },
+  "key_exchange": {
+    "ECDHE": 44017,
+    "RSA": 6378,
+    "DHE": 1674,
+    "None": 154
+  },
+  "selected_cipher_top10": {
+    "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256": 29372,
+    "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384": 8075,
+    "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256": 4125,
+    "TLS_RSA_WITH_AES_128_CBC_SHA": 4078,
+    "TLS_RSA_WITH_AES_256_CBC_SHA": 1905,
+    "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA": 964,
+    "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256": 816,
+    "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384": 643,
+    "TLS_DHE_RSA_WITH_AES_256_CBC_SHA": 502,
+    "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA": 422
+  },
+  "suites_not_in_pqscout_table": {
+    "0x0005": 98,
+    "0x0004": 36,
+    "0xc011": 13,
+    "0x0016": 5,
+    "0xc009": 2
+  },
+  "post_quantum_groups_seen": 0,
+  "hndl_band_per_connection": {
+    "HIGH": 51709,
+    "MEDIUM": 467,
+    "CRITICAL": 360
+  },
+  "hndl_band_per_asset": {
+    "HIGH": 6742,
+    "MEDIUM": 31,
+    "CRITICAL": 30
+  },
+  "wireshark_cross_check": {
+    "tshark_connections_with_client_and_server_hello": 52164,
+    "pqscout_found_same_connection": 52164,
+    "missed_by_pqscout": 0,
+    "pqscout_only": 59,
+    "agreement": {
+      "version": {
+        "agree": 52162,
+        "compared": 52164,
+        "rate": 1.0
+      },
+      "cipher": {
+        "agree": 52162,
+        "compared": 52164,
+        "rate": 1.0
+      },
+      "group_tls13": {
+        "agree": 0,
+        "compared": 0,
+        "rate": null
+      }
+    },
+    "disagreement_count_by_field": {
+      "version": 2,
+      "cipher": 2
+    },
+    "disagreement_kind": {
+      "version:different": 2,
+      "cipher:different": 2
+    },
+    "disagreement_examples": [
+      {
+        "field": "version",
+        "pqscout": "0x0303",
+        "wireshark": "0x0000",
+        "frame": 6273621
+      },
+      {
+        "field": "cipher",
+        "pqscout": "0xc030",
+        "wireshark": null,
+        "frame": 6273621
+      },
+      {
+        "field": "version",
+        "pqscout": "0x0303",
+        "wireshark": "0x0000",
+        "frame": 9612928
+      },
+      {
+        "field": "cipher",
+        "pqscout": "0xc030",
+        "wireshark": null,
+        "frame": 9612928
+      }
+    ],
+    "missed_examples": []
+  }
+}
