@@ -244,7 +244,7 @@ Appendix H, Step 9 of the report shows what to run in these folders.
 
 ## 10. Use of AI
 
-The code and test scripts were developed with substantial assistance from Claude (Anthropic). The author set the requirements, chose the tests, ran and reviewed the experiments, and is responsible for the results. The report's AI Use Statement gives the details.
+The author set the requirements, chose the tests, ran and reviewed the experiments, and is responsible for the results. The language, grammar and consistency was kept by the Claude (Anthropic). The report's AI Use Statement gives the details.
 
 ## 11. Copyright
 
